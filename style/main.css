@@ -184,13 +184,17 @@ header nav a:hover {
     color: white;
 }
 
-.box-filme {
+.item {
     height: 100%;
     width: 100%;
     display: block;
     cursor: pointer;
 
+}
+
+.item img {
     border-radius: 5px;
+    display: block;
 }
 
 .box-filme2 {
@@ -202,4 +206,26 @@ header nav a:hover {
     border-radius: 3px;
 }
 
+/*Arrows*/
+.owl-prev, .owl-next {
+    width: 40px;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block !important;
+    border:0 solid black;
+    background-color: rgba(20,20,20,.7) !important;
+    margin: 0 !important;
+    opacity: 0 !important;
+}
+.owl-prev { left: 0 }
+.owl-next { right: 0 }
+.owl-prev i, .owl-next i {
+    transform : scale(2,5);
+    color: white;
+}
 
+.owl-theme .owl-nav [class*="owl-"]:hover {
+    opacity: 1 !important;
+}
