@@ -1,4 +1,3 @@
-  
 $('.owl-carousel').owlCarousel({
     loop:true,
     margin:10,
@@ -16,4 +15,8 @@ $('.owl-carousel').owlCarousel({
             items:5
         }
     }
+});
+
+$("#info").click(function() {
+    $("#modal").show();
 });
