@@ -20,3 +20,7 @@ $('.owl-carousel').owlCarousel({
 $("#info").click(function() {
     $("#modal").show();
 });
+
+function fechaModal(){
+    document.getElementById("modal").style.display = "none";
+}

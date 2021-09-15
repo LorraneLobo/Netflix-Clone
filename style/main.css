@@ -277,10 +277,85 @@ header nav a:hover {
     padding-left: 15px;
 }
 
-#modal-content .infos{
+#modal-content .infos {
     padding-left: 15px;
+    margin-top: -95px;
+    z-index: 200;
+    position: absolute;
+    font-size: 16px;
+}
+#modal-content .infos .infos-esquerda {
+    padding-bottom: 10px;
+    width: 60%;
+    float: left;
+
+}
+
+#modal-content .infos .infos-esquerda .subtitulo{
+    font-weight: bolder;
+    font-size: 18px;
+}
+#modal-content .infos .infos-esquerda .descricao{
+    padding: 15px 10px 10px 0;
+    width: fit-content;
+}
+
+#modal-content .infos .infos-direita {
+    float: left;
+    width: 40%;
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+.infos-direita .conteudo{
+    padding-bottom: 15px;
+}
+
+.titulo-direita{
+    color: grey;
 }
 
 #modal-content .vignette-layer {
-    bottom: -20px;
+    background-image: linear-gradient(to bottom, rgba(20, 20, 20, 0) 0, rgba(20, 20, 20, .15) 5%, rgba(20, 20, 20, .35) 10%, rgba(20, 20, 20, .58) 24%, #141414 48%, #141414 100%);
+    bottom: -30px;
+    height: 150px;
+    border-radius: 5px;
+}
+
+.botoes-info{
+    padding: 15px;
+}
+
+.botoes-info .botao{
+    background-color: white;
+    color: black;
+}
+
+.botoes-info .botao:hover {
+    background-color: grey;
+    color: white;
+}
+
+.botao-fechar{
+    background-color: transparent;
+    border: none;
+    color: white;
+
+    padding: 10px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.conteudo-modal{
+    display: flex;
+}
+
+.botao-fechar-modal{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    cursor: pointer;
+    margin: 1em;
 }

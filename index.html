@@ -22,10 +22,10 @@
             </a>
             <nav>
                 <a href="index.html">Início</a>
-                <a href="series.html">Séries</a>
-                <a href="#">Filmes</a>
-                <a href="#">Bombando</a>
-                <a href="#">Minha lista</a>
+                <a href="construcao.html">Séries</a>
+                <a href="construcao.html">Filmes</a>
+                <a href="construcao.html">Bombando</a>
+                <a href="construcao.html">Minha lista</a>
             </nav>
             <div class="second-nav">
                 <div><i class="fas fa-search fa-lg"></i></div>
@@ -186,30 +186,44 @@
     <div id="modal">
         <div id="modal-content">
             <div class="img-modal">
-                <img class="img-titulo-modal" src="img/logos/b99-logo.png" alt="">
-                <div class="botoes">
-                    <button onclick="window.open('https://youtu.be/sEOuJ4z5aTc')" role="button" class="botao" >
-                        <i class="fas fa-play fa-lg"></i>
-                        Assistir
-                    </button>
+                <div class="conteudo-modal">
+                    <div class="itens-modal">
+                        <img class="img-titulo-modal" src="img/logos/b99-logo.png" alt="">
+                        <div class="botoes-info">
+                            <button onclick="window.open('https://youtu.be/sEOuJ4z5aTc')" role="button" class="botao" >
+                                <i class="fas fa-play fa-lg"></i>
+                                Assistir
+                            </button>
+                        </div>
+                    </div>
+                    <div class="botao-fechar-modal">
+                        <button onclick="fechaModal()" type="button" class="botao-fechar" id="close">
+                            <i class="fas fa-times-circle fa-2x"></i>
+                        </button>
+                    </div>
                 </div>
-
                 <div class="vignette-layer"></div>
             </div>
-<!--            <div class="infos">-->
-<!--                <div class="infos-esquerda">-->
-<!--                    <p class="subtitulo">Assista à temporada 7 agora</p>-->
-<!--                    <p class="descricao">O brilhante e imaturo detetive Jake Peralta precisa aprender a seguir as regras e trabalhar em equipe quando um capitão exigente assume o comando de seu esquadrão.</p>-->
-<!--                </div>-->
-<!--                <div class="infos-direita">-->
-<!--                    <span class="titulo-direita">Elenco: </span>-->
-<!--                    <span class="descricao-direita">Andy Samberg, Andre Braugher, Stephanie Beatriz</span>-->
-<!--                    <span class="titulo-direita">Gêneros: </span>-->
-<!--                    <span class="descricao-direita">Séries policiais, Sitcoms, Comédias para a TV</span>-->
-<!--                    <span class="titulo-direita">Cenas e momentos: </span>-->
-<!--                    <span class="descricao-direita">Besteirol</span>-->
-<!--                </div>-->
-<!--            </div>-->
+            <div class="infos">
+                <div class="infos-esquerda">
+                    <p class="subtitulo">Assista à temporada 7 agora</p>
+                    <p class="descricao">O brilhante e imaturo detetive Jake Peralta precisa aprender a seguir as regras e trabalhar em equipe quando um capitão exigente assume o comando de seu esquadrão.</p>
+                </div>
+                <div class="infos-direita">
+                    <div class="conteudo">
+                        <span class="titulo-direita">Elenco: </span>
+                        <span class="descricao-direita">Andy Samberg, Andre Braugher, Stephanie Beatriz</span><br>
+                    </div>
+                    <div class="conteudo">
+                    <span class="titulo-direita">Gêneros: </span>
+                    <span class="descricao-direita">Séries policiais, Sitcoms, Comédias para a TV</span><br>
+                    </div>
+                    <div class="conteudo">
+                    <span class="titulo-direita">Cenas e momentos: </span>
+                    <span class="descricao-direita">Besteirol</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
